@@ -42,3 +42,6 @@ app.post('/v1/sanitize', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
+
+// WAJIB UNTUK VERCEL: Ekspor aplikasi agar dikenali sebagai Serverless Function
+module.exports = app;
